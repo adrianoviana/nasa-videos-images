@@ -1,0 +1,120 @@
+/* Estilo para a página inteira */
+body {
+  font-family: Arial, sans-serif; /* Define a família da fonte para todo o corpo da página */
+  line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+  background-color: #f7f7f7; /* Define a cor de fundo da página */
+  color: #333; /* Define a cor do texto para toda a página */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilo para o cabeçalho principal */
+h1 {
+  text-align: center; /* Centraliza o texto do cabeçalho */
+  padding: 20px 0; /* Adiciona preenchimento ao cabeçalho */
+  background-color: #007bff; /* Define a cor de fundo do cabeçalho */
+  color: #fff; /* Define a cor do texto do cabeçalho */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Estilo para o container do cabeçalho */
+#header {
+  display: flex; /* Utiliza o flexbox para alinhar os itens do cabeçalho */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro do cabeçalho */
+  align-items: center; /* Alinha os itens verticalmente ao centro do cabeçalho */
+  padding: 20px; /* Adiciona preenchimento ao cabeçalho */
+}
+
+/* Estilo para o container de busca */
+#search-container {
+  display: flex; /* Utiliza o flexbox para alinhar os itens da busca */
+  align-items: center; /* Alinha os itens verticalmente ao centro da busca */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro da busca */
+  margin-bottom: 20px; /* Adiciona margem na parte inferior do container de busca */
+}
+
+/* Estilo para a entrada de busca */
+#search-input {
+  padding: 10px; /* Adiciona preenchimento à entrada de busca */
+  font-size: 16px; /* Define o tamanho da fonte da entrada de busca */
+  border: 1px solid #007bff; /* Adiciona uma borda à entrada de busca */
+  border-radius: 5px 0 0 5px; /* Define o raio da borda para o lado esquerdo */
+  width: 400px; /* Define a largura da entrada de busca */
+}
+
+/* Estilo para o botão de busca */
+#search-button {
+  padding: 11px 20px; /* Adiciona preenchimento ao botão de busca */
+  font-size: 16px; /* Define o tamanho da fonte do botão de busca */
+  background-color: #007bff; /* Define a cor de fundo do botão de busca */
+  color: #fff; /* Define a cor do texto do botão de busca */
+  border: none; /* Remove a borda do botão de busca */
+  border-radius: 0 5px 5px 0; /* Define o raio da borda para o lado direito */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse sobre o botão */
+  margin-left: -1px; /* Move o botão ligeiramente para a esquerda para alinhar com a borda da entrada de busca */
+}
+
+/* Estilo para o container de imagens */
+#images-container {
+  display: grid; /* Utiliza o CSS grid para organizar as imagens em uma grade */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define o modelo de coluna para a grade */
+  grid-gap: 20px; /* Adiciona espaço entre os itens da grade */
+  justify-items: center; /* Alinha os itens da grade ao centro horizontalmente */
+  padding: 20px; /* Adiciona preenchimento ao container de imagens */
+}
+
+/* Estilo para o container do álbum */
+.album {
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse sobre o álbum */
+  text-align: center; /* Centraliza a descrição do álbum */
+}
+
+/* Estilo para imagens e vídeos dentro do container do álbum */
+.album img,
+.album video {
+  width: 100%; /* Define a largura das imagens e vídeos para 100% do container pai */
+  height: auto; /* Mantém a proporção das imagens e vídeos */
+  border-radius: 10px; /* Adiciona borda arredondada às imagens e vídeos */
+}
+
+/* Estilo para o elemento h2 dentro do container do álbum */
+.album h2 {
+  margin: 10px 0; /* Adiciona margem ao elemento h2 */
+  font-size: 16px; /* Define o tamanho da fonte do elemento h2 */
+}
+
+/* Estilo para a descrição dentro do modal */
+#modal-description {
+  font-size: 16px; /* Define o tamanho da fonte para a descrição dentro do modal */
+  color: #fff; /* Define a cor do texto para a descrição dentro do modal */
+}
+
+/* Estilo para o container do modal */
+#modal-container {
+  display: none; /* Esconde o container do modal por padrão */
+  position: fixed; /* Define a posição como fixa para posicionar o modal sobre a página */
+  z-index: 999; /* Define a ordem de empilhamento para trazer o modal para a frente */
+  top: 0; /* Posiciona o modal no topo da página */
+  left: 0; /* Posiciona o modal à esquerda da página */
+  width: 100%; /* Define a largura do modal para cobrir toda a página */
+  height: 100%; /* Define a altura do modal para cobrir toda a página */
+  background-color: rgba(0, 0, 0, 0.9); /* Define um fundo preto semitransparente para o modal */
+  align-items: center; /* Alinha verticalmente o conteúdo do modal */
+  justify-content: center; /* Alinha horizontalmente o conteúdo do modal */
+}
+
+/* Estilo para a imagem do modal */
+#modal-image {
+  max-width: 90%; /* Define a largura máxima da imagem do modal */
+  max-height: 90%; /* Define a altura máxima da imagem do modal */
+}
+
+/* Estilo para o botão de fechar o modal */
+#close-modal {
+  position: absolute; /* Define a posição do botão de fechar como absoluta */
+  top: 20px; /* Posiciona o botão 20px a partir do topo */
+  right: 30px; /* Posiciona o botão 30px a partir da direita */
+  font-size: 30px; /* Define o tamanho da fonte para o botão de fechar */
+  color: #fff; /* Define a cor do texto para o botão de fechar */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse sobre o botão */
+}

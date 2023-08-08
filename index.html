@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos e Imagens da NASA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Encontre Vídeos e Imagens da NASA</h1>
+    <div id="header">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Digite sua busca">
+            <button id="search-button">Buscar</button>
+        </div>
+    </div>
+    <div id="images-container">
+        <!-- Imagens e vídeos da NASA serão adicionados dinamicamente aqui -->
+    </div>
+    <div id="modal-container">
+        <span id="close-modal" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="Imagem em destaque">
+        <p id="modal-description"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
